@@ -1,0 +1,158 @@
+{
+    "name": "OldScheme",
+    "maps": [
+        {
+            "name": "DroneControl",
+            "id": "4c67c0c8-dc25-4a25-8d74-e181c7503b7e",
+            "actions": [
+                {
+                    "name": "HorizontalMove",
+                    "type": "Value",
+                    "id": "ace8677f-cba8-45a3-94d9-302461f35f6c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "VerticalMove",
+                    "type": "Value",
+                    "id": "6ffe746c-2c79-4130-8413-4af7007e36c6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Yaw",
+                    "type": "Value",
+                    "id": "9bc2d42a-90df-4c34-adca-eb48b43cd830",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pitch",
+                    "type": "Value",
+                    "id": "fd219a4a-c580-4ad6-b2ac-87b941c856ab",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Roll",
+                    "type": "Value",
+                    "id": "17743041-2670-4455-b219-3cff67f9d131",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "74605938-4292-415c-b6e2-5a01368bef7d",
+                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "StickDeadzone,InvertVector2(invertY=false)",
+                    "groups": "",
+                    "action": "HorizontalMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0bb081f9-8052-4608-afcd-c2c3dccb6f96",
+                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8202b4b-d368-4572-8454-c965ca7e0471",
+                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "",
+                    "action": "VerticalMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "One Modifier",
+                    "id": "ab0581b2-86bc-435e-867d-7c094268ad40",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "66de53bb-cfb7-4f81-a457-3eb26bf9e314",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "4a9d6700-2393-4b41-830f-99f6044477e3",
+                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "",
+                    "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "One Modifier",
+                    "id": "9df31251-28b8-4381-a00e-321cea05c1db",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "930b33a8-ef80-4929-b48b-904298467ee6",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "60e4ef10-c5ab-49d9-a36c-c8834a48233d",
+                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "StickDeadzone,InvertVector2(invertY=false)",
+                    "groups": "",
+                    "action": "Roll",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
